@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    clear: both;
+    text-align: center;
+}
+
+.title p{
+    text-align: center;
+	width: 50%;
+	position: relative;
+	left: 25%;
+	font-size: 2em;
+}
+
+.input_box{
+    height: 70%;
+    width: 30%;
+    margin-top: 5%;
+    margin-left: 35%;
+    font-size: 2.5em;
+    /* background: blue; */
+    padding-left: 10px;
+    text-align: center;
+}
+
+.name_age{
+    font-size: 0.7em;
+}
+
+.name_age input{
+    width: 50%;
+    height: 20px;
+}
+
+.gender{
+    font-size: 0.7em;
+    text-align: left;
+    padding-left: 35%;
+}
+
+button{
+    width: 30%;
+    height: 30px;
+}

@@ -1,0 +1,91 @@
+.images{
+	display: flex;
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+}
+
+/* p{
+	text-align: center;
+	width: 50%;
+	position: relative;
+	left: 25%;
+	font-size: 2em;
+} */
+
+.intro p{
+	font-size: 1em;
+}
+
+#trail_number{
+	font-size: 2em;
+	text-align: center;
+}
+
+.vl{
+	margin-top: 60px;
+	border-left: 3px solid grey;
+	height: 350px;
+	opacity: 0.5;
+	position: absolute;
+	left: 45%;
+	/* border: 1px solid red; */
+}
+
+.image_left{
+	/* border: 1px solid red; */
+	flex: 1;
+	display: inline-block;
+	padding: 0 0 0 0;
+}
+
+
+.image_right{
+	/*border: 1px solid green;*/
+	flex: 1;
+	display: table;
+}
+
+.col{
+	/* border: 1px solid red; */
+	float: left;
+	padding: 5px;
+	margin-left: 40px;  
+}
+
+.pick{
+	text-align: center;
+}
+
+.pick input{
+	margin: 5px 0 5px 0;
+	border: 1px solid red;
+}
+
+.images img{
+	display: inline-block;
+}
+
+.images span{
+	/*border: 1px solid black;*/
+	display: block;
+	margin: 10px 0 10px 0;
+}
+
+.buttons{
+	text-align: center;
+}
+
+#next{
+	margin-top: 20px;
+	height: 50px;
+	width: 140px;
+}
+
+.pick{
+	width: auto;
+	/*border: 2px solid red;*/
+	position: relative;
+}

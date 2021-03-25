@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="public/quiz.css">
+
+	<title></title>
+</head>
+<body>
+	<div class="container">
+	<p id="trail_number">000/cityscape</p>
+	<div class="images">
+	<div class="image_left">
+		<h1>Target: Ground truth</h1>
+		<img src="public/ECCV_AMT/cityscape/Sum/000/GroundTruth_epoch000_Real_image.jpg" id="truth">
+		<span>Ground Truth</span>
+		<img src="public/ECCV_AMT/cityscape/Sum/000/RemovalPart_epoch000_InCom_img.jpg" id="missing">
+		<span>Removed Part</span>
+	</div>
+	<div class="vl"></div>
+	<div class="image_right">
+		<h1>Which one match the ground-truth best? Select one.</h1>
+		<div class="col">
+		<div class="pick">
+			<img src="public/ECCV_AMT/cityscape/Sum/000/BasicPipeline_Shape_epoch000_SynMask_image_colormap.jpg" id="method1">
+			<span><input id="choice1" type="checkbox" name="progress" onClick="ckChange(this)"></span>
+		</div>
+		<div class="pick">
+			<img src="public/ECCV_AMT/cityscape/Sum/000/BasicPipeline_MulExp_epoch000_SynMask_image_colormap.jpg" id="method2">
+			<span><input id="choice2" type="checkbox" name="progress" onClick="ckChange(this)"></span>
+		</div>
+		</div>
+		<div class="col">
+		<div class="pick">
+			<img src="public/ECCV_AMT/cityscape/Sum/000/BasicPipeline_BothLoss_epoch000_SynMask_image_colormap.jpg" id="method3">
+			<span><input id="choice3" type="checkbox" name="progress" onClick="ckChange(this)"></span>
+		</div>
+		<div class="pick">
+			<img src="public/ECCV_AMT/cityscape/Sum/000/LSGAN_epoch000_SynMask_image_colormap.jpg" id="method4">
+			<span><input id="choice4" type="checkbox" name="progress" onClick="ckChange(this)"></span>
+		</div>	
+		</div>
+	</div>
+	</div>
+	<div class="intro">
+            <p>On the left columns, ground-truth shows the segmentation map of a natural image, removed part shows the same segmentation map but with a missing object(car). Our goal of the paper is to automatically synthesize the missing object as new segmentation maps. The images on the right shows results from four methods.
+            </p>
+            <br>
+            <p>You are asked to chose one of FOUR output synthesized segmentation map that best match the ground-truth with the goal of filling the missing object in the most seamless manner</p>
+    </div>
+	<div class="buttons">
+		<button id="next">Next</button>
+	</div>
+	</div>
+	<script
+  	src="https://code.jquery.com/jquery-3.4.1.js"
+  	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  	crossorigin="anonymous">
+	  </script>
+	  <script src="public/js/quiz.js"></script>
+</body>
+</html>
